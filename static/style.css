@@ -1,0 +1,35 @@
+body {
+    background-color: #D9C2A6;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sour Gummy';
+}
+
+h1 {
+    background-color: #AEDCAE;
+    padding: 15px;
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.summary-container {
+    background-color: #AEDCAE;
+    padding: 15px;
+    border-radius: 15px;
+    min-width: 600px;
+    max-width: 600px;
+    margin: 20px auto;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+br {
+    display: block;
+    line-height: 0.1;
+}
+
+.summary-container:hover {
+    transform: scale(1.07);
+}

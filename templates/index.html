@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Email Bot</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form action="/" method="POST">
+            <input type="email" name="user_email" placeholder="Enter your email: " required>
+            <button type="submit">Submit</button>
+        </form>        
+        <h1>&#128231 Email Bot &#128231</h1>
+        {% for message in messages %}
+        <div class = "summary-container">
+            {{message | safe}}
+        </div>
+        {% endfor %}
+        <br>
+    </body>
+</html>
